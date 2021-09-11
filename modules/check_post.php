@@ -1,5 +1,5 @@
 <?php 
-  	require 'func.php';
+  	require 'simple_def.php';
 
 	$users_info = gen_usrs(array(), 20);
 	$users_info[] = array('username' => 'dxv1d', 'password' => '123');

@@ -12,10 +12,10 @@
 
   function gen_str($chars) {
   	if (gettype($chars) == 'string')
-		$chars = str_split($chars);
-	for ($i = 0; $i <= 20; $i++) {
-		$arr[] = $chars[mt_rand(0, count($chars))];
-	}
+		  $chars = str_split($chars);
+    	for ($i = 0; $i <= 20; $i++) {
+    		$arr[] = $chars[mt_rand(0, count($chars))];
+  	  }
 	return $arr;
   }
 
@@ -29,3 +29,9 @@
 	return $arr;
   }
 
+  function showFiles($dir) {
+    $files = array_diff(scandir($dir), array('.', '..'));
+      foreach ($files as $key => $value) {
+        echo "<li><a href='$dir/$value'>$value</a></li>";
+      }
+  }

@@ -20,14 +20,14 @@
     <h1>Home page</h1>
   </main>
 
-  <footer>Copyright &copy; 2049</footer>
+  <footer>I dont care &copy; 2049</footer>
 </body>
 </html>
 
 <?php
   print_r($_GET);
 
-  include 'modules/func.php';
-  echo concate(gen_str('hsau2193ksuf3u0sad'));
+  include 'modules/simple_def.php';
+  echo concate(gen_str('x10F'));
 
 ?>

@@ -35,23 +35,12 @@
 </html>
 
 <?php
+  include 'modules/simple_def.php';
 
   $chars = ['a', 'd', 'x', 'z', 'c', 'w'];
   $arr = array();
   for ($i = 0; $i <= 20; $i++) {
-  $arr[] = $chars[mt_rand(1, 5)];
-}
-
-  function concate($arr) {
-    $sum;
-    foreach ($arr as $item => $value) { 
-      if (gettype($value) == 'string') {
-        $sum = $sum . $value;
-      }
-    }
-    return $sum;
+    $arr[] = $chars[mt_rand(1, 5)];
   }
-
-  // echo concate($arr);
  
 ?>
